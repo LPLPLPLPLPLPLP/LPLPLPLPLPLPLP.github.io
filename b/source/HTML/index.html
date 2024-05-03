@@ -1,0 +1,12 @@
+<input type="number" id="min" placeholder="Min">
+<input type="number" id="max" placeholder="Max">
+<button onclick="generateRandomNumber()">Generate Random Number</button>
+
+<script>
+    function generateRandomNumber(){
+        const min = document.getElementById("min").value;
+        const max = document.getElementById("max").value;
+        const randomNumber = Math.floor(Math.random() * (max - min + 1) + min);
+        console.log(randomNumber);
+    }
+</script>
